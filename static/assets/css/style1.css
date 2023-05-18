@@ -1,0 +1,60 @@
+.frm1{
+    padding-top: 200px;
+}
+.frm1 input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.frm{
+    padding-top: 140px;
+}
+.frm input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.submit{
+    background-color: blue;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    
+}
+/* .submit1{
+    background-color: blue;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    
+} */
+.flx{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.flx a{
+    margin-top: 3px;
+}
+
+.h2{
+    padding-bottom: 10px;
+    color: black;
+}
+.forgot{
+    margin-top: 8px;
+    margin-right: 160px;
+    color: black;
+    font-weight: 700;
+}
+

@@ -1,0 +1,512 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+
+<!-- Mirrored from template.hasthemes.com/hmart/hmart/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Sep 2021 18:04:09 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Hmart-Smart Product eCommerce html Template">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- CSS
+    ============================================ -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font.awesome.css" />
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/venobox.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css"> -->
+    <!-- Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- Minify Version -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/cart.min.css' %}">
+
+
+    <link rel="shortcut icon" type="image/icon" href="{% static 'assets/logo/favicon.png' %}"/>
+       
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="{% static 'assets/css/linearicons.css' %}">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+    
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootsnav.css' %}" >	
+    
+    <!--style.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    
+    <!--responsive.css-->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+
+            <!-- top-area Start -->
+    <div class="top-area">
+        <div class="header-area">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70"
+                data-minus-value-mobile="55" data-speed="1000">
+
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search">
+                                <a href="#"><span class="lnr lnr-magnifier"></span></a>
+                            </li><!--/.search-->
+                            <li class="nav-setting">
+                                <a href="#"><span class="lnr lnr-cog"></span></a>
+                            </li><!--/.search-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="lnr lnr-cart"></span>
+                                    <span class="badge badge-bg-1">2</span>
+                                </a>
+                                {% comment %} <ul class="dropdown-menu cart-list s-cate">
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img
+                                                src="{% static 'assets/images/collection/arrivals1.png' %}"
+                                                class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">arm <br> chair</a></h6>
+                                            <p>1 x - <span class="price">$180.00</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img
+                                                src="{% static 'assets/images/collection/arrivals2.png' %}"
+                                                class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">single <br> armchair</a></h6>
+                                            <p>1 x - <span class="price">$180.00</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="single-cart-list">
+                                        <a href="#" class="photo"><img
+                                                src="{% static 'assets/images/collection/arrivals3.png' %}"
+                                                class="cart-thumb" alt="image" /></a>
+                                        <div class="cart-list-txt">
+                                            <h6><a href="#">wooden arn <br> chair</a></h6>
+                                            <p>1 x - <span class="price">$180.00</span></p>
+                                        </div><!--/.cart-list-txt-->
+                                        <div class="cart-close">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div><!--/.cart-close-->
+                                    </li><!--/.single-cart-list -->
+                                    <li class="total">
+                                        <span>Total: $0.00</span>
+                                        <button class="btn-cart pull-right" onclick="window.location.href='#'">view
+                                            cart</button>
+                                    </li>
+                                </ul> {% endcomment %}
+                            </li><!--/.dropdown-->
+                        </ul>
+                    </div><!--/.attr-nav-->
+                    <!-- End Atribute Navigation -->
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">sine<span>mkt</span>.</a>
+
+                    </div><!--/.navbar-header-->
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="  active"><a href="{% url 'index' %}">home</a></li>
+                            <li class="scroll"><a href="#new-arrivals">new arrival</a></li>
+                            <li class="scroll"><a href="#feature">features</a></li>
+                            <li class="scroll"><a href="#blog">blog</a></li>
+                            <li class="scroll"><a href="#newsletter">contact</a></li>
+                            {% if user.is_authenticated %}
+                            <li class=""><a href="{% url 'logout2' %}">Logout</a></li>
+                            {% else %}
+                            <li class=""><a href="{% url 'signin' %}">Login</a></li>
+                            {% endif %}
+                        </ul><!--/.nav -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.container-->
+            </nav><!--/nav-->
+            <!-- End Navigation -->
+        </div>
+        <div class="clearfix"></div>
+
+    </div><!-- /.top-area-->
+
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+
+          <!-- End Navigation -->
+          {% load cart_tag %}
+        <!-- checkout area start -->
+    <form action="{% url 'placehoder' %}" method="POST">
+        {% csrf_token %}
+    
+        <div class="checkout-area pt-100px pb-100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="billing-info-wrap">
+                            <h3>Billing Details</h3>
+                
+                            <div class="row">
+                            
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>First Name</label>
+                                        <input  name="firstname" type="text" value="{{user.first_name}}"  />
+                                     
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>Last Name</label>
+                                        <input  name="lastname" type="text"  value="{{user.last_name}}"   />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-4">
+                                        <label>Company Name</label>
+                                        <input name="company" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-select mb-4">
+                                        <label>Country</label>
+                                        <select  name="country" required>
+                                            <option>Select a country</option>
+                                            <option>India</option>
+                                            <option>Japan</option>
+                                            <option>USA</option>
+                                            <option>UK</option>
+                                            <option>India</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-4">
+                                        <label>Street Address</label>
+                                        <input class="billing-address" placeholder="House number and street name" type="text"  name="address" required/>
+                                        <input placeholder="Apartment, suite, unit etc." type="text"  value="{{user.country}}" readonly/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-4">
+                                        <label>Town / City</label>
+                                        <input type="text"  /  name="city" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>State / County</label>
+                                        <input type="text" /  name="state" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>Postcode / ZIP</label>
+                                        <input type="text"  name="pin" required />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>Phone</label>
+                                        <input type="text"  name="phone" required  />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-4">
+                                        <label>Email Address</label>
+                                        <input type="text"  value="{{user.email}}"  name="email" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-account mb-30px">
+                                
+                                <label>Create an account?</label>
+                            </div>
+                            <div class="checkout-account-toggle open-toggle2 mb-30">
+                                <input placeholder="Email address" type="email" />
+                                <input placeholder="Password" type="password" />
+                                <button class="btn-hover checkout-btn" type="submit">register</button>
+                            </div>
+                            <div class="additional-info-wrap">
+                                <h4>Additional information</h4>
+                                <div class="additional-info">
+                                    <label>Order notes</label>
+                                    <textarea placeholder="Notes about your order, e.g. special notes for delivery. " name="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="checkout-account mt-25">
+                                
+                                <label>Ship to a different address?</label>
+                            </div>
+                            <div class="different-address open-toggle mt-30px">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>First Name</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>Last Name</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-4">
+                                            <label>Company Name</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-select mb-4">
+                                            <label>Country</label>
+                                            <select>
+                                                <option>Select a country</option>
+                                                <option>Azerbaijan</option>
+                                                <option>Bahamas</option>
+                                                <option>Bahrain</option>
+                                                <option>Bangladesh</option>
+                                                <option>Barbados</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-4">
+                                            <label>Street Address</label>
+                                            <input class="billing-address" placeholder="House number and street name" type="text" />
+                                            <input placeholder="Apartment, suite, unit etc." type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-4">
+                                            <label>Town / City</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>State / County</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>Postcode / ZIP</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>Phone</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-4">
+                                            <label>Email Address</label>
+                                            <input type="text"  />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-5 mt-md-30px mt-lm-30px ">
+                        <div class="your-order-area">
+                            <h3>Your order</h3>
+                            <div class="your-order-wrap gray-bg-4">
+                                <div class="your-order-product-info">
+                                    <div class="your-order-top">
+                                        <ul>
+                                            <li>Product</li>
+                                            <li>Total</li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-middle">
+                                        {% for key,value in request.session.cart.items %}
+                                        <ul>
+                                            <li><span class="order-middle-left" name="item_name">{{value.name}} X {{value.quantity}}</span> <span
+                                                class="order-price">{{ value.price|multiply:value.quantity }}</span></li>
+                                          
+                                        </ul>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="your-order-bottom">
+                                        <ul>
+                                            <li class="your-order-shipping">Shipping</li>
+                                            <br>
+                                            <li>Shipping <span>20.00</span></li>
+                                            <br> 
+                                            <li>GST <span>10.00</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-total">
+                                        <ul>
+                                            <li class="order-total">Total</li>
+                                            <li><input value="{{cart_total_amount|add:20|add:10}}" name="amount" readonly></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="payment-accordion element-mrg">
+                                        <div id="faq" class="panel-group">
+                                            <div class="panel panel-default single-my-account m-0">
+                                                <div class="panel-heading my-account-title">
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-1" class="collapsed" aria-expanded="true">Direct bank transfer</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="my-account-1" class="panel-collapse collapse show" data-bs-parent="#faq">
+                                                    <div class="panel-body">
+                                                        <p>Please send a check to Store Name, Store Street, Store Town,
+                                                            Store State / County, Store Postcode.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default single-my-account m-0">
+                                                <div class="panel-heading my-account-title">
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-2" aria-expanded="false" class="collapsed">Check payments</a></h4>
+                                                </div>
+                                                <div id="my-account-2" class="panel-collapse collapse" data-bs-parent="#faq">
+                                                    <div class="panel-body">
+                                                        <p>Please send a check to Store Name, Store Street, Store Town,
+                                                            Store State / County, Store Postcode.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default single-my-account m-0">
+                                                <div class="panel-heading my-account-title">
+                                                    <h4 class="panel-title"><a data-bs-toggle="collapse" href="#my-account-3">Cash on delivery</a></h4>
+                                                </div>
+                                                <div id="my-account-3" class="panel-collapse collapse" data-bs-parent="#faq">
+                                                    <div class="panel-body">
+                                                        <p>Please send a check to Store Name, Store Street, Store Town,
+                                                            Store State / County, Store Postcode.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Place-order mt-25">
+                            {% comment %} <button type="submit" class="btn btn-info w-25"><a class="bg-dark" href=""></a>  Place Order </button>  {% endcomment %}
+                            
+                           <a href="{% url 'placehoder' %} "> <input type="submit" class="btn1 btn-info" ></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+   <!--<a class="btn-hover" href=""> --> 
+
+
+        <!-- checkout area end -->
+
+        <footer id="footer"  class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>	
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>	
+					</div>
+					<p>
+						&copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+        <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+
+
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+        
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+    <!--bootstrap.min.js-->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    
+    <!-- bootsnav js -->
+    <script src="{% static 'assets/js/bootsnav.js' %}"></script>
+
+    <!--owl.carousel.js-->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    
+    <!--Custom JS-->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+</body>
+</html>
